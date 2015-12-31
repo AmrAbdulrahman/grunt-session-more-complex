@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Grunt Introduction</title>
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- app styles -->
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12 col-lg-offset-3 col-md-offset-2 col-sm-offset-1">
+          <div ui-view></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Angular -->
+    <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script src="bower_components/ui-router/release/angular-ui-router.min.js" type="text/javascript"></script>
+
+    <!-- js -->
+    <script src="app/app.js" type="text/javascript"></script>
+    <script src="app/routes.js" type="text/javascript"></script>
+    <script src="app/services/calculator-srvc.js" type="text/javascript"></script>
+    <script src="app/states/landing/landing-ctrl.js" type="text/javascript"></script>
+  </body>
+</html>
